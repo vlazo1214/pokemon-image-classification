@@ -1,4 +1,5 @@
 anyio==4.13.0
+appnope==0.1.4
 archspec==0.2.5
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
@@ -10,7 +11,7 @@ babel==2.18.0
 beautifulsoup4==4.14.3
 bleach==6.3.0
 boltons==25.0.0
-Brotli==1.2.0
+brotli==1.2.0
 certifi==2025.11.12
 cffi==2.0.0
 charset-normalizer==3.4.4
@@ -78,6 +79,7 @@ notebook_shim==0.2.4
 numpy==2.4.3
 opencv-python==4.13.0.92
 packaging==25.0
+pandas==3.0.1
 pandocfilters==1.5.1
 parso==0.8.6
 pexpect==4.9.0
@@ -110,6 +112,7 @@ ruamel.yaml.clib==0.2.14
 scikit-image==0.26.0
 scikit-learn==1.8.0
 scipy==1.17.1
+seaborn==0.13.2
 Send2Trash==2.1.0
 setuptools==80.9.0
 six==1.17.0
