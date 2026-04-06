@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 from torch.utils.data import Dataset, DataLoader
 
 class NumpyDataset(Dataset):
@@ -11,13 +12,16 @@ class NumpyDataset(Dataset):
         return len(self.images)
 
     def __getitem__(self, idx):
-        image = self.images[idx]
+        image = self.images[idx].reshape(64, 64, 3)
         label = self.labels[idx]
         
-        # Ensure image is in a format suitable for Albumentations (H, W, C)
-        # Often npy files are saved as (N, C, H, W) or (N, H, W, C)
+        if image.max() <= 1.0:
+            image = (image * 255).astype(np.uint8)
+        else:
+            image = image.astype(np.uint8)
+
+        # 3. Apply Transforms (including Normalization)
         if self.transform:
-            # Albumentations expects (H, W, C)
             augmented = self.transform(image=image)
             image = augmented['image']
             
