@@ -1,6 +1,8 @@
 # directories
 .ipynb_checkpoints/
 environments/
+X_train.npy
+X_train.npy
 output_images/
 __pycache__/
 best_model_fold*/
