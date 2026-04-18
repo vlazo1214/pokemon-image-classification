@@ -7,3 +7,12 @@ best_model_fold*/
 
 *.pt
 
+
+# Ignore dataset
+Pokemon/
+
+# Ignore system files
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
