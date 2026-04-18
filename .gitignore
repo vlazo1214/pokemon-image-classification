@@ -1,5 +1,20 @@
+# directories
 .ipynb_checkpoints/
-
 environments/
 X_train.npy
 X_train.npy
+output_images/
+__pycache__/
+best_model_fold*/
+
+*.pt
+
+
+# Ignore dataset
+Pokemon/
+
+# Ignore system files
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
