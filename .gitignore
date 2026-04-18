@@ -1,6 +1,12 @@
+# directories
 .ipynb_checkpoints/
-
 environments/
+output_images/
+__pycache__/
+best_model_fold*/
+
+*.pt
+
 
 # Ignore dataset
 Pokemon/
